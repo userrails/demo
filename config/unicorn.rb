@@ -30,11 +30,9 @@ pid "/var/www/html/demo/pids/unicorn.pid"
 # stderr_path "/path/to/log/unicorn.log"
 # stdout_path "/path/to/log/unicorn.log"
 stderr_path "/var/www/html/demo/log/unicorn.log"
-stdout_path "/var/www/html/demo/log/unicorn.log"
 
 # Unicorn socket
-listen "/tmp/unicorn.[app name].sock"
-listen "/tmp/unicorn.myapp.sock"
+listen "/tmp/unicorn.demo.sock"
 
 # Number of processes
 # worker_processes 4
