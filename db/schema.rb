@@ -22,4 +22,10 @@ ActiveRecord::Schema.define(version: 20180405100304) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "posts", id: :serial, force: :cascade do |t|
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
